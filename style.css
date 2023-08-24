@@ -1,0 +1,406 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    background: #080808;
+    color: #fff;
+}
+#header
+{
+    width: 100%;
+    height: 100vh;
+}
+.container
+{
+    padding: 10px 10%;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 10px 20px;
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after
+{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+.header-txt
+{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-txt h1
+{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.header-txt span
+{
+    color: #ff004f;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1
+{
+    flex-basis: 35%;
+}
+.col1 img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+.col2
+{
+    flex-basis: 60%;
+}
+.sub
+{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.titles
+{
+    display: flex;
+    margin:20px 0px 40px;
+}
+.title1
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+ .activelink::after
+{
+    content: ' ';
+    width: 0%;
+    background: #ff004f;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.activelink:hover::after
+{
+    width: 100%;
+}
+.contents ul li
+{
+list-style: none;
+margin: 12px 0px;
+}
+.contents ul li span
+{
+    color: #ff004f;
+}
+.contents
+{
+    display: none;
+}
+.activetab
+{
+    display: block;
+}
+#services
+{
+    padding: 30px 0;
+}
+.servicelist
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.servicelist div
+{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.servicelist div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.servicelist div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.servicelist div a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.servicelist div:hover
+{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+#projects
+{
+    padding: 50px 0;
+}
+.worklist
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.work
+{
+    border-radius: 10px;
+position: relative;
+overflow: hidden;
+
+}
+.work img
+{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer
+{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.layer h3
+{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a 
+{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff004f;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+}
+.work:hover .layer
+{
+
+    height: 100%;
+}
+.work:hover img
+{
+    transform: scale(1.1);
+}
+.layer a i
+{
+    font-size: 30px
+}
+.contactleft
+{
+    flex-basis: 35%;
+}
+.contactright
+{
+    flex-basis: 60%;
+}
+.contactleft p
+{
+    margin-top: 30px;
+}
+ .contactleft p i
+ {
+    color:#ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+ }
+ .socialicons
+ {
+    margin-top: 30px;
+ }
+  .socialicons a
+  {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+  .socialicons a:hover
+  {
+    color: #ff004f;
+    transform: translateY(-5px);
+  }
+   .btn2
+  {
+    display: inline-block;
+    background: #ff004f;
+  }
+  .btn
+  {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 54px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .contactright form
+  {
+    width: 100%;
+  }
+  form input,form textarea
+  {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+  }
+  form .btn2
+  {
+    padding: 14px 60px;
+    cursor: pointer;
+  }
+  nav .fa-solid
+  {
+    display: none;
+  }
+  html
+  {
+    scroll-behavior: smooth;
+  }
+  @media only screen and (max-width:600px)
+  {
+    .header-txt
+    {
+            margin-top: 100%;
+            font-size: 16px;
+    }
+    .header-txt h1
+    {
+        font-size: 30px;
+    }
+    nav .fa-solid
+    {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul
+    {
+      background: #ff004f;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.2s;
+    }
+    nav ul li
+    {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid
+    {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub
+    {
+        font-size: 40px;
+    }
+    .col1,.col2
+    {
+        flex-basis: 100%;
+    }
+    .col1
+    {
+        margin-bottom: 30px;
+    }
+    .col2
+    {
+        font-size: 14px;
+    }
+    .title1
+    {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contactleft,.contactright
+    {
+        flex-basis: 100%;
+    }
+  }
+  #kk
+  {
+    margin-top: -140px;
+  }

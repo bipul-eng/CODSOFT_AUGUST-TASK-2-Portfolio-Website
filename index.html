@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c0abb776d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2>Bipul.</h2>
+                <ul id="side">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-txt">
+                <p>UI/UX Designer</p>
+                <h1>Hi I am <span>Bipul</span><br>Singh From India</h1>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="col2">
+                    <h1 class="sub">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus alias omnis hic,
+                        delectus quia aliquid tempore reprehenderit recusandae tempora, quam aliquam iure odio rerum
+                        voluptatibus eligendi, autem officia voluptatum? Labore harum eos ipsam itaque molestias
+                        blanditiis laboriosam, nobis magni ratione fuga est ab, cumque ipsa aliquid officia repellat
+                        reprehenderit. Qui adipisci facere a illum recusandae odio?</p>
+                        <div class="titles">
+                            <p class="title1" onclick="opentab('Skills')">Skills</p>
+                            <p class="title1 " onclick="opentab('Experience')">Experience</p>
+                            <p class="title1 " onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="contents activetab" id="Skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                                
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                
+                                <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="Experience">
+                            <ul>
+                                <li><span>2019-2021</span><br>Software Developer At MS Office</li>
+                                
+                                <li><span>2022-2023</span><br>Web App Development Executive At MacBook</li>
+                                
+                                <li><span>2023-2024</span><br>Building Android/IOS Apps In IO Store</li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="Education">
+                            <ul>
+                                <li><span>2016-2018</span><br>CBSE Matriculation With 89% Of Marks</li>
+                                
+                                <li><span>2018-2020</span><br>CBSE Intermediate With 90% Of Marks</li>
+                                
+                                <li><span>2020-2023</span><br>Graduated In Bachelors In Computer AApplications With 9 CGPA</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="servicelist">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus earum sed illum iste! Voluptates, excepturi!</p>
+                    <a href="#">Learn more</a>                
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus earum sed illum iste! Voluptates, excepturi!</p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Android Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus earum sed illum iste! Voluptates, excepturi!</p>
+                    <a href="#">Learn more</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/socialmedia.avif">
+                    <div class="layer">
+                        <h3>Socal Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/bipul-eng/CODSOFT_AUGUST-TASK-1-Landing-Page"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/net1.avif">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/bipul-eng/OCTANET_AUGUST-Task3-Spotify-Clone"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.avif">
+                    <div class="layer">
+                        <h3>Netflix App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/bipul-eng/OCTANET_AUGUST-Task1-Landing-Page"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bipulkr2792003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6203113878</p>
+                    <div class="socialicons">
+                        <a herf=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a herf=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a herf=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a herf=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="conatctright" id="form">
+                   <form method="post" id="kon">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" type="submit" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                   </form>
+                   <!--  <h4 id="kk"></h4>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+let tablinks=document.getElementsByClassName('title1');
+let tabcontents=document.getElementsByClassName('contents');
+function opentab(tabname)
+{
+for(tablink of tablinks)
+{
+  tablink.classList.remove('activelink');
+}
+for(tabcontent of tabcontents)
+{
+  tabcontent.classList.remove('activetab');
+}
+event.currentTarget.classList.add('activelink');
+document.getElementById(tabname).classList.add('activetab');
+}
+    </script>
+    <script>
+        var sidemenu=document.getElementById("side");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const kk=document.getElementById("kk")
+        const form=document.getElementById("form")
+        form.addEventListener('submit', e=>
+        {
+             e.preventDefault()
+            let h4=document.createElement("h4");
+            h4.innerHTML="Message sent successfully";
+            form.appendChild(h4);
+            h4.id='kk';
+            setTimeout(function(){
+    document.getElementById("kon").reset();
+}, 3000);
+setTimeout(function(){
+    document.getElementById("kk").remove();
+}, 3000);
+        })
+    </script>
+</body>
+
+</html>
